@@ -1,7 +1,20 @@
+#!/usr/bin/env python3
+"""
+    Author: Brighton Ancelin
+    
+    Basic exponential/logarithmic Lie mathematics mapping between the Lie 
+    algebras and Lie groups.
+    
+    Admittedly, this code is poorly documented. For someone familiar with 
+    the field, the basic structure of the LieGroup and LieAlgebra objects 
+    should be fairly straightforward. The interesting parts are the 
+    algorithms detailed in the lie_exp() and lie_log() functions.
+"""
 
 import numpy as np
 from scipy.linalg import expm, logm
 
+# Basic matrices
 I2 = np.array([
     [1, 0],
     [0, 1]
